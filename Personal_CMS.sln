@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 Presentation", "1.1 Presentation", "{D31C3301-CE8B-406A-A8C5-729AF61E7AF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2 Application", "1.2 Application", "{07436AD8-C335-4FD0-8225-398EF911719D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3 Domain", "1.3 Domain", "{4CF283D6-301F-44C3-A339-C3183B2AF2B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4 Infrastructure", "1.4 Infrastructure", "{4798AAA5-2BFC-4802-993E-861ACA0E543C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5 Test", "1.5 Test", "{F1C09A21-B6ED-4F45-80A3-DB65B1880542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF.Core", "layers\1.4 Infrastructure\EF.Core\EF.Core.csproj", "{70E69BB4-FCC9-4F02-B154-0C27D6B19BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fewju.Application.Service", "layers\1.2 Application\Fewju.Application.Service\Fewju.Application.Service.csproj", "{5C5ACCCB-1444-4CBC-9592-99F40079DCA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fewju.Domain", "layers\1.3 Domain\Fewju.Domain\Fewju.Domain.csproj", "{C93E2E2E-9912-49B2-B5C5-5495CFC2D68D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fewju.Application.IService", "layers\1.2 Application\Fewju.Application.IService\Fewju.Application.IService.csproj", "{49C21786-9983-4006-A68E-15CE5DEB944B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fewju.Web", "layers\1.1 Presentation\Fewju.Web\Fewju.Web.csproj", "{7FE24FBD-59A4-4828-80C6-7CCAB8B4ADB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fewju.BrowserPlugin", "layers\1.1 Presentation\Fewju.BrowserPlugin\Fewju.BrowserPlugin.csproj", "{807B964F-F4D1-4FF3-98AE-B8D9CBCDB514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fewju.DTO", "layers\1.3 Domain\Fewju.DTO\Fewju.DTO.csproj", "{5B61FF0B-3575-4D9E-A681-10248F970515}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70E69BB4-FCC9-4F02-B154-0C27D6B19BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E69BB4-FCC9-4F02-B154-0C27D6B19BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E69BB4-FCC9-4F02-B154-0C27D6B19BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E69BB4-FCC9-4F02-B154-0C27D6B19BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5ACCCB-1444-4CBC-9592-99F40079DCA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5ACCCB-1444-4CBC-9592-99F40079DCA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5ACCCB-1444-4CBC-9592-99F40079DCA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5ACCCB-1444-4CBC-9592-99F40079DCA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C93E2E2E-9912-49B2-B5C5-5495CFC2D68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C93E2E2E-9912-49B2-B5C5-5495CFC2D68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C93E2E2E-9912-49B2-B5C5-5495CFC2D68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C93E2E2E-9912-49B2-B5C5-5495CFC2D68D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C21786-9983-4006-A68E-15CE5DEB944B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C21786-9983-4006-A68E-15CE5DEB944B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C21786-9983-4006-A68E-15CE5DEB944B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C21786-9983-4006-A68E-15CE5DEB944B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE24FBD-59A4-4828-80C6-7CCAB8B4ADB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE24FBD-59A4-4828-80C6-7CCAB8B4ADB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE24FBD-59A4-4828-80C6-7CCAB8B4ADB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE24FBD-59A4-4828-80C6-7CCAB8B4ADB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{807B964F-F4D1-4FF3-98AE-B8D9CBCDB514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{807B964F-F4D1-4FF3-98AE-B8D9CBCDB514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{807B964F-F4D1-4FF3-98AE-B8D9CBCDB514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{807B964F-F4D1-4FF3-98AE-B8D9CBCDB514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B61FF0B-3575-4D9E-A681-10248F970515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B61FF0B-3575-4D9E-A681-10248F970515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B61FF0B-3575-4D9E-A681-10248F970515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B61FF0B-3575-4D9E-A681-10248F970515}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7FE24FBD-59A4-4828-80C6-7CCAB8B4ADB0} = {D31C3301-CE8B-406A-A8C5-729AF61E7AF1}
+		{807B964F-F4D1-4FF3-98AE-B8D9CBCDB514} = {D31C3301-CE8B-406A-A8C5-729AF61E7AF1}
+		{5C5ACCCB-1444-4CBC-9592-99F40079DCA7} = {07436AD8-C335-4FD0-8225-398EF911719D}
+		{49C21786-9983-4006-A68E-15CE5DEB944B} = {07436AD8-C335-4FD0-8225-398EF911719D}
+		{C93E2E2E-9912-49B2-B5C5-5495CFC2D68D} = {4CF283D6-301F-44C3-A339-C3183B2AF2B1}
+		{5B61FF0B-3575-4D9E-A681-10248F970515} = {4CF283D6-301F-44C3-A339-C3183B2AF2B1}
+		{70E69BB4-FCC9-4F02-B154-0C27D6B19BCF} = {4798AAA5-2BFC-4802-993E-861ACA0E543C}
+	EndGlobalSection
+EndGlobal
