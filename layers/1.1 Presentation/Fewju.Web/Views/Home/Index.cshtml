@@ -1,0 +1,8 @@
+﻿@{
+    Fewju.Application.IService.ISettingService settingService = new Fewju.Application.Service.SettingService();
+    var setting = settingService.Get();
+    ViewBag.Title = setting.SiteName;
+    ViewBag.Keywords = setting.Keywords;
+    ViewBag.Description = setting.Description;
+}
+@Html.Action("PostList", "Post", new { page=Request["page"] })

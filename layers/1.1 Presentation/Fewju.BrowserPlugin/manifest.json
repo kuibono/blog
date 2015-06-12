@@ -1,0 +1,18 @@
+﻿{  
+  "name": "Fewju Fav",  
+  "version": "0.9.0",  
+  "manifest_version": 2,
+  "background": { "scripts": ["jquery-2.0.0.min.js", "background.js"] },
+  "permissions": ["tabs", 
+        "http://*/*", 
+        "https://*/*", 
+        "notifications"],
+  "description": "Collect all your favorite content",  
+  "content_scripts": [ { "matches": ["*://*/*"], "js": ["jquery-2.0.0.min.js","tabListener.js"] } ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "browser_action": {  
+    "default_icon": "icon.png" ,
+    "default_title": "Fewju Fav",
+    "default_popup": "popup.html"
+  }  
+} 

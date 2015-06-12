@@ -1,0 +1,92 @@
+﻿<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        color: #333;
+        overflow: hidden;
+        margin: 0px;
+        padding: 5px;
+        background: white;
+        font-size: 12px;
+    }
+
+    img {
+        margin: 0 4px;
+    }
+    #mainTable{
+        width:600px;
+        font-size:12px;
+    }
+        #mainTable input, #mainTable textarea{
+            width:100%;
+        }
+        #mainTable textarea {
+            height:100px;
+        }
+</style>
+
+<div>
+    <table id="mainTable">
+        <tr>
+            <td style="width:50px;">
+                Url
+            </td>
+            <td style="width:550px;">
+                <input type="text" name="url" id="txt_url" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Dimain
+            </td>
+            <td>
+                <input type="text" name="domain" id="txt_domain" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                UrlName
+            </td>
+            <td>
+                <input type="text" name="url_name" id="txt_url_name" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Title
+            </td>
+            <td>
+                <input type="text" name="title" id="txt_title" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Summary
+            </td>
+            <td>
+                <textarea name="cummary" id="txt_summary"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea name="content" id="txt_Content"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td id="msg" colspan="2">
+                
+            </td>
+        </tr>
+    </table>
+    
+    <input type="button" value="submit" id="btn_submit"/>
+    <input type="button" value="update" id="test" />
+</div>
+<script type="text/javascript" src="jquery-2.0.0.min.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+<link rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="tinyeditor.js"></script>
+

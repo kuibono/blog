@@ -1,0 +1,42 @@
+﻿@model Fewju.Domain.Entity.Post
+@{
+    ViewBag.Title = Model.Title;
+    ViewBag.Keyworkds = Model.Title;
+    ViewBag.Description = Model.Summary;
+}
+<div class="post clear-fix">
+    <h2><a class="title" href="javascript:void(0)" rel="bookmark">@Model.Title</a></h2>
+    <div class="info clear-fix">
+        <span class="date">
+            @Model.CreateDate
+        </span>
+        <span class="author"><a href="@Url.Action("ByUserName", "Post", new {name=Model.User.UserName })" title="@Model.User.Name" rel="author">@Model.User.Name</a></span>
+        <span class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+            <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        </span>
+        <span class="comments"><a href="?@Model.Id#respond" title="《@Model.Title》上的评论">暂无评论</a></span>
+       
+        
+    </div>
+    <div class="content clear-fix">
+        <p>@Html.Raw(Model.Content.Content)</p>
+    </div>
+    <div class="under">
+        <span class="categories">分类: </span>
+        @if (Model.Categories!=null)
+        {
+            foreach (var cat in Model.Categories)
+            {
+                <span><a href="/?cat=@cat.Id" title="查看 @cat.Name 中的全部文章" rel="category">@cat.Name</a></span>
+            }
+        }
+        
+        <span class="tags">标签: @Model.Title</span>
+        <span></span>
+    </div>
+</div>

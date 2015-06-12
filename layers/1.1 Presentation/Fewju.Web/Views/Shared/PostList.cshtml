@@ -1,0 +1,26 @@
+﻿@model List<Fewju.Domain.Entity.Post>
+@foreach (var post in Model)
+{
+    <div class="post clear-fix">
+        <h2><a class="title" href="@Url.Action("ByName", "Post", new { name=post.UrlName })" rel="bookmark">@post.Title</a></h2>
+        <div class="info clear-fix">
+            <span class="date">
+                @post.CreateDate
+            </span>
+            <span class="author"><a href="@Url.Action("ByUserName", "Post", new {name=post.User.UserName })" title="@post.User.Name" rel="author">@post.User.Name</a></span>
+            <span class="comments"><a href="?@post.Id#respond" title="《@post.Title》上的评论">暂无评论</a></span>
+        </div>
+        <div class="content clear-fix">
+            <p>@post.Summary</p>
+        </div>
+        <div class="under">
+            <span class="categories">分类: </span>
+            @foreach (var cat in post.Categories)
+            {
+                <span><a href="@Url.Action("Index", "Category", new { name= cat.UrlName})" title="查看 @cat.Name 中的全部文章" rel="category">@cat.Name</a></span>
+            }
+            <span class="tags">标签: @post.Title</span>
+            <span></span>
+        </div>
+    </div>
+}

@@ -1,0 +1,11 @@
+﻿@{
+    Layout = null;
+}
+@model List<Fewju.Domain.Entity.Link>
+<div id="themeinfo">
+    友情链接：
+    @foreach(var link in Model)
+    {
+        <a href="@link.Href" title="@link.Name" target="@link.Target">@link.Name</a>
+    }
+</div>

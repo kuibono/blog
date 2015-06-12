@@ -1,0 +1,15 @@
+﻿@{
+    Layout = null;
+}
+@model List<Fewju.Domain.Entity.Category>
+<div id="categories-2" class="widget widget_categories">
+  <h3>分类目录</h3>		
+    <ul>
+        @foreach(var cat in Model)
+        {
+            <li class="cat-item cat-item-@cat.Id">
+                <a href="@Url.Action("Index", "Category", new { name= cat.UrlName})" title="查看 @cat.Name 下的所有文章">@cat.Name</a>
+        </li>
+        }
+    </ul>
+</div>

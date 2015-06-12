@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+}
+@model List<Fewju.Domain.Entity.Category>
+<ul id="menus">
+    <li class="current_page_item">
+        <a class="home" title="首页" href="@Url.Action("Index","Home")">首页</a>
+    </li>
+    @foreach (var cat in Model)
+    {
+        <li class="page_item page-item-@cat.Id">
+            <a href="@Url.Action("Index", "Category", new { name= cat.UrlName})">@cat.Name</a>
+        </li>
+    }
+    <li>
+        <a class="lastmenu" href="javascript:void(0);"></a>
+    </li>
+</ul>

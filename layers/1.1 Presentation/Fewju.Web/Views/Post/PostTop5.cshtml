@@ -1,0 +1,14 @@
+﻿@{
+    Layout = null;
+    string title = ViewBag.ModelName ?? "近期文章";
+}
+@model List<Fewju.Domain.Entity.Post>
+<div id="recent-posts-2" class="widget widget_recent_entries">
+  <h3>@title</h3>		
+    <ul>
+        @foreach(var post in Model)
+        {
+            <li><a href="@Url.Action("ByName", "Post", new { name=post.UrlName })" title="@post.Title">@post.Title</a></li>
+        }
+    </ul>
+</div>
